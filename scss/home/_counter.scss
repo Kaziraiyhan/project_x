@@ -1,0 +1,54 @@
+.counter_area {
+  background: url(../images/home/counter_bg.webp);
+  background-color: #111;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 120px 0 60px 0;
+
+  .counter_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .service_tow {
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s;
+    height: 100%;
+    .title_main {
+      font-size: 80px;
+      line-height: 80px;
+      padding-bottom: 0;
+      margin-bottom: 10px;
+      text-align: left;
+      border: none;
+      transition: 0.4s;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: var(--color-primary);
+      top: 5px;
+      right: 50%;
+      transform: rotate(45deg);
+    }
+    &:hover .title_main {
+      color: var(--color-primary);
+    }
+  }
+}
+
+p {
+  font-size: var(--font-size-b2);
+  line-height: var(--line-height-b2);
+  font-weight: var(--p-regular);
+  color: var(--color-body);
+  margin: 0 0 40px;
+}

@@ -1,0 +1,129 @@
+#section {
+  padding: 120px 0;
+
+  .banner_wrapper {
+    text-align: center;
+    margin-bottom: 55px;
+    position: relative;
+    overflow: visible;
+  }
+  .blog_slaider {
+    .wrapper {
+      position: relative;
+      transition: all 0.5s;
+      overflow: hidden;
+      margin: 10px;
+      width: 100%;
+
+      &:hover .image img {
+        transform: scale(110%);
+      }
+      &:hover .content .title a {
+        color: var(--color-primary);
+      }
+      .blog-badge {
+        text-align: center;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background: #dd5903;
+        color: #fff;
+        text-align: center;
+        width: 85px;
+        height: 85px;
+        text-transform: uppercase;
+        .date {
+          font-size: 50px;
+          line-height: 50px;
+          font-weight: 400;
+        }
+        .month {
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .image {
+        width: 100%;
+        transition: all 0.5s;
+        overflow: hidden;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #ffffff;
+          right: 20px;
+          top: 20px;
+          transition: all 0.4s;
+        }
+        img {
+          width: 100%;
+          transform: scale(100%);
+          transition: all 0.5s;
+        }
+      }
+      .content {
+        .title a {
+          color: #111111;
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 34px;
+          transition: var(--transition);
+        }
+        p {
+          font-size: var(--font-size-b2);
+          line-height: var(--line-height-b2);
+          font-weight: var(--p-regular);
+          color: var(--color-body);
+          margin: 0 0 20px;
+        }
+      }
+    }
+  }
+}
+
+.tag {
+  margin-top: 10px !important;
+  a {
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    pointer-events: none;
+    display: block;
+  }
+}
+
+.brand_slaider {
+  padding-top: 120px;
+  .slaider_item {
+    .image {
+      opacity: 0.5;
+      visibility: visible;
+      transition: var(--transition);
+    }
+    &:hover .image {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+
+  .line_draw {
+    height: 200px;
+    overflow: hidden;
+    span {
+      color: red;
+      display: block;
+      width: 2px;
+      height: 200px;
+      background-color: #dd5903;
+    }
+  }
+}
