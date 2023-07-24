@@ -710,6 +710,16 @@ p {
   background-color: #dd5903;
 }
 
+.gallery {
+  margin: 15px;
+}
+.gallery .gallery_image {
+  aspect-ratio: 1/1;
+}
+.gallery .gallery_image img {
+  width: 100%;
+}
+
 #progress {
   position: fixed;
   bottom: 20px;

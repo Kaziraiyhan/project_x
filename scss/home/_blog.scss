@@ -127,3 +127,13 @@
     }
   }
 }
+.gallery {
+  margin: 15px;
+  .gallery_image {
+    aspect-ratio: 1/1;
+
+    img {
+      width: 100%;
+    }
+  }
+}
