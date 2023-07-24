@@ -16,6 +16,17 @@ footer {
       width: auto;
       font-family: var(--font-secondary);
       position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: var(--color-primary);
+        top: 5px;
+        left: 0;
+        transform: rotate(45deg);
+      }
     }
     .logo {
       max-width: 150px;

@@ -202,10 +202,19 @@ nav {
   display: flex;
   justify-content: space-between;
   li {
-    width: 33.33% !important;
     padding: 0 10px;
     margin-bottom: 10px;
-    
+
+    a {
+      text-align: center !important;
+
+      img {
+        width: 100%;
+        width: 263px;
+        margin-bottom: 10px;
+        aspect-ratio: 1 / 1;
+      }
+    }
   }
 }
 
