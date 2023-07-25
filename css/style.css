@@ -724,13 +724,54 @@ p {
 }
 .gallery .gallery_image {
   aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.gallery .gallery_image:hover img {
+  scale: 1.1;
 }
 .gallery .gallery_image img {
   width: 100%;
+  transition: var(--transition);
 }
 
 footer {
   background-color: var(--color-secondary);
+  position: relative;
+}
+footer .image1 {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  animation: jump2 12s linear infinite;
+}
+footer .image2 {
+  position: absolute;
+  right: -4%;
+  top: -30%;
+  animation: rotate1 6s linear infinite;
+}
+@keyframes jump2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 100px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes rotate1 {
+  0% {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 1;
+  }
+  100% {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
 }
 footer .footer_wrapper {
   padding: 120px 0;
@@ -852,6 +893,22 @@ footer .footer_wrapper .footer_get_touch .social_wrapper ul li svg:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.copyright {
+  background-color: var(--color-secondary);
+  text-align: center;
+  padding: 38px 0;
+  color: var(--color-body);
+  font-weight: 500;
+  border-top: 1px solid var(--color-body);
+}
+.copyright a {
+  color: var(--color-white);
+  transition: var(--transition);
+}
+.copyright a:hover {
+  color: var(--color-primary);
 }
 
 #progress {
