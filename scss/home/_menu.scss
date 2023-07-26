@@ -77,7 +77,7 @@
       .inner {
         width: 100%;
         padding-left: 100px;
-        padding: 0 0 0 100px;
+        padding-top: 120px;
         margin: 0 15% 0 0;
         .inner_one_wrapper {
           text-align: left;
@@ -86,6 +86,7 @@
       }
     }
   }
+
   .content_inner {
     .menu_wrapper {
       position: relative;
@@ -95,14 +96,32 @@
       padding: 40px 0;
       transition: all 0.4s;
       border-bottom: 1px solid #e6e6e6;
+      gap: 30px;
+      .p-title a {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 35px;
+        color: #111111;
+        margin: 0;
+        transition: 0.3s ease all;
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+      .price-tag a {
+        color: #111111;
+        margin: 0;
+        padding: 5px 10px;
+        background-color: var(--color-white);
+        border-radius: 10px;
+      }
     }
   }
 }
 .bottom {
   .inner {
     width: 100%;
-    padding-left: 100px;
-    padding: 0 0 0 100px;
+    padding: 100px 0 100px 100px;
     margin: 0 15% 0 0;
   }
   .content_bottom {
