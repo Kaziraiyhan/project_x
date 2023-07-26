@@ -533,6 +533,7 @@ nav {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.4), 10px 10px 52px 0px rgba(0, 0, 0, 0.36);
+  margin-bottom: 30px;
 }
 .discount_menu .content {
   width: 50%;
@@ -1134,6 +1135,9 @@ footer .footer_wrapper .footer_get_touch .social_wrapper ul li svg:hover {
   .discount_tag {
     left: 0;
     scale: 0.8;
+  }
+  .discount_menu {
+    padding: 60px 0;
   }
 }
 @media (max-width: 992px) {
