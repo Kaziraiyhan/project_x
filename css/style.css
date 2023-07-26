@@ -627,6 +627,10 @@ nav {
   padding: 5px 10px;
   background-color: var(--color-white);
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.menu_inner .content_inner .menu_wrapper .price-tag a:hover {
+  background-color: var(--color-primary);
 }
 
 .bottom .inner {
