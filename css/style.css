@@ -445,34 +445,6 @@ nav {
   top: 0;
 }
 
-@media (max-width: 768px) {
-  nav .menu {
-    display: none;
-  }
-  .header_right .query_list {
-    display: none;
-  }
-  .main_menu {
-    padding: 0 20px;
-  }
-  .droupdown .nav_link {
-    padding: 5px 5px;
-  }
-  .side_bar {
-    max-width: 240px;
-    padding: 50px 41px 0 2px;
-  }
-}
-@media (max-width: 992px) {
-  .menu {
-    display: none;
-  }
-}
-@media (max-width: 1200px) {
-  .droupdown .nav_link {
-    padding: 5px 0px;
-  }
-}
 .banner {
   background: url(../images/home/banner_background.webp);
   background-repeat: no-repeat;
@@ -486,6 +458,23 @@ nav {
 
 .banner_right_image {
   position: relative;
+  max-width: 100%;
+}
+.banner_right_image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner_left_image {
+  max-width: 100%;
+  position: relative;
+  z-index: 10;
+}
+.banner_left_image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .banner_img_1 {
@@ -1101,6 +1090,62 @@ footer .footer_wrapper .footer_get_touch .social_wrapper ul li svg:hover {
   color: var(--color-primary);
 }
 
+@media (max-width: 768px) {
+  nav .menu {
+    display: none;
+  }
+  .header_right .query_list {
+    display: none;
+  }
+  .main_menu {
+    padding: 0 20px;
+  }
+  .droupdown .nav_link {
+    padding: 5px 5px;
+  }
+  .side_bar {
+    max-width: 240px;
+    padding: 50px 41px 0 2px;
+  }
+  .banner_img_1 {
+    max-width: 200px;
+    z-index: 10;
+  }
+  .banner_img_1 img {
+    width: 100%;
+  }
+  .banner_img_3 {
+    max-width: 150px;
+  }
+  .banner_img_3 img {
+    width: 100%;
+  }
+  .banner_img_2 {
+    z-index: 1;
+  }
+  .banner_img_4 {
+    max-width: 100px;
+  }
+  .banner_img_4 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .discount_tag {
+    left: 0;
+    scale: 0.8;
+  }
+}
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .droupdown .nav_link {
+    padding: 5px 0px;
+  }
+}
 #progress {
   position: fixed;
   bottom: 20px;

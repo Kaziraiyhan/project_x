@@ -10,6 +10,20 @@
 }
 .banner_right_image {
   position: relative;
+  max-width: 100%;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.banner_left_image {
+  max-width: 100%;
+  position: relative;
+  z-index: 10;
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
 }
 .banner_img_1 {
   position: absolute;

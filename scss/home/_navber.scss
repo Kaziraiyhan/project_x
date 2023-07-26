@@ -276,7 +276,6 @@ nav {
   }
 }
 
-
 .side_bar {
   position: fixed;
   overflow: hidden;
@@ -445,48 +444,3 @@ nav {
 
 // resposive disigne md
 
-@media (max-width: 768px) {
-  // nav start
-  nav {
-    .menu {
-      display: none;
-    }
-  }
-  .header_right {
-    .query_list {
-      display: none;
-    }
-  }
-  .main_menu {
-    padding: 0 20px;
-  }
-
-  .droupdown .nav_link {
-    padding: 5px 5px;
-  }
-
-  .side_bar {
-    max-width: 240px;
-
-    padding: 50px 41px 0 2px;
-  }
-  // nav End
-}
-
-@media (max-width: 992px) {
-  // nav start
-  .menu {
-    display: none;
-  }
-  // nav End
-}
-
-@media (max-width: 1200px) {
-  // nav start
-  .droupdown {
-    .nav_link {
-      padding: 5px 0px;
-    }
-  }
-  // nav End
-}
