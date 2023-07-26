@@ -92,9 +92,10 @@ header.menu_fixd {
 
 .menu {
   display: flex;
-  justify-content: center;
   gap: 10px;
   margin-bottom: 0;
+  align-items: center;
+  height: 100px;
 }
 .menu .droupdown:nth-child(3) .submenu::after {
   content: none;
@@ -120,6 +121,8 @@ nav {
   display: block;
   margin-right: 18px;
   padding: 5px 10px;
+  width: -moz-max-content;
+  width: max-content;
 }
 .droupdown a {
   margin-right: 18px;
@@ -203,7 +206,6 @@ nav {
 }
 
 .submenu.menu-home {
-  min-width: 1900px;
   width: 100%;
   margin: 0;
   margin-top: 0;
@@ -225,7 +227,7 @@ nav {
 }
 .flex-mega li a img {
   width: 100%;
-  width: 263px;
+  max-width: 263px;
   margin-bottom: 10px;
   aspect-ratio: 1/1;
 }
@@ -247,6 +249,8 @@ nav {
   height: 50px;
   padding: 0 30px 0 10px;
   border-radius: 30px;
+  width: -moz-max-content;
+  width: max-content;
 }
 .header_right .icon {
   width: 30px;
@@ -282,10 +286,6 @@ nav {
   list-style: none;
   margin: 2px 2px;
   padding: 3px;
-}
-
-#side_bar {
-  padding: 50px;
 }
 
 .side_bar {
@@ -392,22 +392,36 @@ nav {
   right: 0;
 }
 
+.mobile_menu .mainmenu {
+  width: 100%;
+}
 .mobile_menu a.main {
   padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   cursor: pointer;
   position: relative;
   color: #fff;
+  display: flex;
 }
 .mobile_menu a {
   display: block;
   color: #fff;
+}
+.mobile_menu .has-droupdown a svg {
+  margin-left: auto;
 }
 .mobile_menu .has-droupdown .submenu {
   display: none;
 }
 .mobile_menu .active .submenu {
   display: block;
+}
+
+.side_bar_socil .wrapper {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  margin-top: 40px;
 }
 
 #anywhere-home {
@@ -431,6 +445,34 @@ nav {
   top: 0;
 }
 
+@media (max-width: 768px) {
+  nav .menu {
+    display: none;
+  }
+  .header_right .query_list {
+    display: none;
+  }
+  .main_menu {
+    padding: 0 20px;
+  }
+  .droupdown .nav_link {
+    padding: 5px 5px;
+  }
+  .side_bar {
+    max-width: 240px;
+    padding: 50px 41px 0 2px;
+  }
+}
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .droupdown .nav_link {
+    padding: 5px 0px;
+  }
+}
 .banner {
   background: url(../images/home/banner_background.webp);
   background-repeat: no-repeat;

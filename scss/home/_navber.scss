@@ -74,11 +74,13 @@ header.menu_fixd {
     line-height: 100px;
   }
 }
+
 .menu {
   display: flex;
-  justify-content: center;
   gap: 10px;
   margin-bottom: 0;
+  align-items: center;
+  height: 100px;
 
   .droupdown {
     &:nth-child(3) .submenu {
@@ -106,6 +108,7 @@ nav {
     display: block;
     margin-right: 18px;
     padding: 5px 10px;
+    width: max-content;
   }
   a {
     margin-right: 18px;
@@ -190,7 +193,6 @@ nav {
   }
 }
 .submenu.menu-home {
-  min-width: 1900px;
   width: 100%;
   margin: 0;
   margin-top: 0;
@@ -210,7 +212,7 @@ nav {
 
       img {
         width: 100%;
-        width: 263px;
+        max-width: 263px;
         margin-bottom: 10px;
         aspect-ratio: 1 / 1;
       }
@@ -233,6 +235,7 @@ nav {
     height: 50px;
     padding: 0 30px 0 10px;
     border-radius: 30px;
+    width: max-content;
   }
 
   .icon {
@@ -272,9 +275,7 @@ nav {
     padding: 3px;
   }
 }
-#side_bar {
-  padding: 50px;
-}
+
 
 .side_bar {
   position: fixed;
@@ -382,28 +383,43 @@ nav {
 }
 
 .mobile_menu {
+  .mainmenu {
+    width: 100%;
+  }
   a.main {
     padding: 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     cursor: pointer;
     position: relative;
     color: #fff;
+    display: flex;
   }
+
   a {
     display: block;
     color: #fff;
   }
-  .has-droupdown{
+  .has-droupdown {
+    a {
+      svg {
+        margin-left: auto;
+      }
+    }
 
-
-    .submenu{
+    .submenu {
       display: none;
     }
- 
   }
-  .active .submenu{
+  .active .submenu {
     display: block;
   }
+}
+
+.side_bar_socil .wrapper {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  margin-top: 40px;
 }
 
 #anywhere-home {
@@ -425,4 +441,52 @@ nav {
   pointer-events: visible;
   z-index: 999;
   top: 0;
+}
+
+// resposive disigne md
+
+@media (max-width: 768px) {
+  // nav start
+  nav {
+    .menu {
+      display: none;
+    }
+  }
+  .header_right {
+    .query_list {
+      display: none;
+    }
+  }
+  .main_menu {
+    padding: 0 20px;
+  }
+
+  .droupdown .nav_link {
+    padding: 5px 5px;
+  }
+
+  .side_bar {
+    max-width: 240px;
+
+    padding: 50px 41px 0 2px;
+  }
+  // nav End
+}
+
+@media (max-width: 992px) {
+  // nav start
+  .menu {
+    display: none;
+  }
+  // nav End
+}
+
+@media (max-width: 1200px) {
+  // nav start
+  .droupdown {
+    .nav_link {
+      padding: 5px 0px;
+    }
+  }
+  // nav End
 }
