@@ -39,6 +39,8 @@
       imJs.navTop();
       imJs.salActive();
       imJs.slickSlaider();
+      imJs.sideMenu();
+      imJs.accirdion();
     },
     // counter up
     counterUp: function (e) {
@@ -63,7 +65,6 @@
         let possition = document.documentElement.scrollTop;
 
         if (possition > 150) {
-
           //   fixed navber
           header.classList.add("menu_fixd");
           //   fixed navber
@@ -77,7 +78,6 @@
 
     slickSlaider: function () {
       $(document).ready(function () {
-
         $(".slaider").slick({
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -105,9 +105,8 @@
           autoplay: true,
           autoplaySpeed: 2000,
           prevArrow: false,
-          nextArrow: false
+          nextArrow: false,
         });
-
       });
     },
 
@@ -132,6 +131,42 @@
 
       $(window).scroll(calcScrollValue);
       $(window).load(calcScrollValue);
+    },
+
+    sideMenu: function () {
+      $(document).on("click", "#menu-btn", function () {
+        $("#side_bar").addClass("show");
+        $("#anywhere-home").addClass("bgshow");
+      });
+      $(document).on("click", ".close_menu", function () {
+        $("#side_bar").removeClass("show");
+        $("#anywhere-home").removeClass("bgshow");
+      });
+      $(document).on("click", "#anywhere-home", function () {
+        $("#side_bar").removeClass("show");
+        $("#anywhere-home").removeClass("bgshow");
+      });
+      $(document).on("click", ".onepage .mainmenu li a", function () {
+        $("#side_bar").removeClass("show");
+        $("#anywhere-home").removeClass("bgshow");
+      });
+    },
+    accirdion: function () {
+      let accirdion_item = document.querySelectorAll(".has-droupdown");
+
+      accirdion_item.forEach((item) => {
+        const content = item.querySelector(".submenu");
+        item.addEventListener("click", () => {
+        
+          for (let i = 0; i < 5; i++) {
+            if (accirdion_item[i] != item) {
+              accirdion_item[i].classList.remove("active");
+            } else {
+              item.classList.toggle("active");
+            }
+          }
+        });
+      });
     },
   };
 
