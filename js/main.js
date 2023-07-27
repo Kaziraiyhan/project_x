@@ -87,6 +87,32 @@
             '<button class="slick_prev" aria-label="Previous" type="button"><i class="fa-solid fa-angle-left"></i></button>',
           nextArrow:
             '<button class="slick_next" aria-label="Next" type="button"><i class="fa-solid fa-angle-right"></i></button>',
+
+            responsive: [
+          
+              {
+                centerMode: true,
+                breakpoint: 1500,
+                settings: {
+                  dots: false,
+                  arrows: false
+
+                }
+              },
+              {
+                centerMode: true,
+                breakpoint: 480,
+                settings: {
+                  dots: false,
+                  arrows: false
+
+                }
+
+              }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+            ]
         });
 
         $(".blog_slaider").slick({
@@ -94,10 +120,58 @@
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 5000,
+          
           prevArrow:
             '<button class="slick_prev" aria-label="Previous" type="button"><i class="fa-solid fa-angle-left"></i></button>',
           nextArrow:
             '<button class="slick_next" aria-label="Next" type="button"><i class="fa-solid fa-angle-right"></i></button>',
+            responsive: [
+              {
+                breakpoint: 1500,
+                settings: {
+                
+                  arrows: false
+  
+                }
+              },
+              {
+                breakpoint: 1080,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  arrows: false
+  
+                }
+              },
+              {
+                breakpoint: 780,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows: false
+  
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows: false
+  
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows: false
+                  
+                }
+              }
+            
+            ]
         });
         $(".brand_slaider").slick({
           slidesToShow: 5,
@@ -106,6 +180,55 @@
           autoplaySpeed: 2000,
           prevArrow: false,
           nextArrow: false,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+              
+                arrows: false
+
+              }
+            },
+            {
+              breakpoint: 1080,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: false
+
+              }
+            },
+     
+            {
+              breakpoint: 780,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false
+
+              }
+            },
+     
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false
+
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false
+                
+              }
+            }
+          
+          ]
         });
       });
     },

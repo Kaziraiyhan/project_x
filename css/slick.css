@@ -100,6 +100,9 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
+.slaider_item {
+  justify-content: center;
+}
 
 .slick_prev {
   position: absolute;

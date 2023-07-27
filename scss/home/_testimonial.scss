@@ -20,18 +20,23 @@
 }
 .testimonial-wrapper {
   background: #f8f8f8;
-  padding: 0 120px;
-  margin: 0 60px;
+  padding: 80px;
+  margin: 0 30px;
+  width: 100%;
+  overflow: hidden;
   .content {
     display: block;
-    padding: 80px 50px 0 50px;
+    max-width: 612px;
     border-radius: 15px;
     text-align: left;
-    margin: 60px 100px 20px 100px !important;
+    margin: 0 auto;
+    padding-bottom: 20px;
   }
   .author {
-    margin: 0 100px;
-    padding: 0 50px 80px 50px;
+    border-top: 1px var(--color-body) solid;
+    padding-top: 20px;
+    max-width: 612px;
+    margin: 0 auto;
     .title {
       color: #111111;
       font-size: 24px;
@@ -45,6 +50,9 @@
       font-weight: 700;
       text-transform: uppercase;
       line-height: 30px;
+    }
+    p {
+      margin: 0 !important;
     }
   }
 }

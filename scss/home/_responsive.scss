@@ -4,16 +4,19 @@
     margin: 0;
   }
   .menu_inner .content_inner .menu_wrapper {
+    display: flex;
+    flex-direction: column;
 
-      display: flex;
-      flex-direction: column;
-      
-      align-items: start;
-      padding: 20px 0;
-      gap: 20px;
+    align-items: start;
+    padding: 20px 0;
+    gap: 20px;
   }
-    
-    
+  // counter start
+  .counter_area .service_tow .title_main {
+    font-size: 46px;
+    text-align: center;
+  }
+  // counter End
 }
 
 @media (max-width: 768px) {
@@ -87,19 +90,69 @@
       padding: 60px 0;
     }
   }
+  // menu End
+  // testimonial start
+  .testimonial-wrapper {
+    padding: 20px;
+  }
+  // footer
+  footer .footer_wrapper {
+    padding: 120px 0;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    ul {
+      padding: 0;
+    }
+    .footer_gallery {
+      justify-content: center;
+    }
+    .footer_logo_area {
+      text-align: center;
+    }
+    .get_touch {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .social_wrapper ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
 }
 
-@media (max-width: 992px) {
+//
+
+@media (min-width: 768px) and (max-width: 992px) {
   // nav start
   .menu {
     display: none;
   }
   // nav End
+
+  // counter
+  .counter_area .counter_inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  // footer
+  footer .footer_wrapper {
+    padding: 120px 0;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   // menu start
-  .menu_wrapper{
-    .p-title{
+  .menu_wrapper {
+    .p-title {
       font-size: 19px;
     }
   }
