@@ -1,4 +1,5 @@
 #menu_banner {
+  overflow: hidden;
   .menu_banner {
     padding: 200px 0 150px 0;
     background: url(../images/shop/shop.webp);
@@ -40,6 +41,173 @@
       font-weight: 400;
       margin: 100px 0px -215px 0px;
       text-align: center;
+    }
+  }
+}
+p {
+  margin: 0;
+}
+.menu_area {
+  background: #f7f7f7;
+  padding: 120px 0;
+  position: relative;
+  .shape-2 {
+    position: absolute;
+    right: 10%;
+    top: 200px;
+    z-index: 33;
+    animation: jump-vertical 12s linear infinite;
+  }
+  @keyframes jump-vertical {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+  .menu_inner {
+    position: relative;
+    .shape-1 {
+      position: absolute;
+      left: -20%;
+      bottom: 18%;
+      animation: jump-horizontal 12s linear infinite;
+    }
+    @keyframes jump-horizontal {
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+      50% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+      }
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+    .menu_wrapper {
+      &:hover .content .p-title a {
+        background-position: 0% 100%;
+        color: var(--color-primary);
+      }
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 30px;
+      height: 100%;
+      .content {
+        padding: 0;
+        position: inherit;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+        transition: all 0.3s ease 0s;
+        width: 58%;
+        .p-title a {
+          color: #111111;
+          background-image: linear-gradient(
+            to right,
+            var(--color-primary) 50%,
+            transparent 50%
+          );
+          background-size: 200% 2px;
+          background-position: 100% 100%;
+          background-repeat: no-repeat;
+          transition: all 500ms;
+        }
+      }
+
+      .image {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .price-tag {
+        background: #fff;
+        padding: 5px 13px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #111111;
+        transition: all cubic-bezier(0.39, 0.58, 0.57, 1) 0.3s;
+        box-shadow: 0 0 25px -12px rgba(17, 17, 17, 0.1607843137);
+        &:hover {
+          background: var(--color-primary);
+          color: #ffffff;
+        }
+        a {
+          color: var(--color-heading);
+          text-decoration: none;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .button_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+    animation: fadeInUp2 0.5s linear;
+    transition-delay: 1s;
+
+    .menu_btn {
+      padding: 20px 33px;
+      font-family: var(--font-secondary);
+      line-height: 10px;
+      max-width: max-content;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: 0.3s;
+      display: block;
+      min-width: max-content;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: #fff;
+      border: 2px solid var(--color-primary);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--color-primary);
+
+      &:hover {
+        color: #111111;
+        background: #ffffff;
+        border: 1px solid #ffffff;
+      }
+    }
+    .btn-secondary {
+      color: #111111;
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+      z-index: 1;
+      &:hover {
+        color: #ffffff;
+        background: var(--color-primary);
+        border: 1px solid var(--color-primary);
+      }
     }
   }
 }
