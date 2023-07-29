@@ -1,0 +1,16 @@
+.name {
+}
+.email {
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.item {
+  display: flex;
+  width: 31%;
+  flex-direction: column;
+  background-color: gold;
+}

@@ -17,6 +17,30 @@ a {
 @import "./home/_blog";
 @import "./home/_footer";
 @import "./home/_responsive";
+// about page
+@import "../scss/about/aboutBanner";
+@import "../scss/about/_aResponsive";
+// shop page
+@import "../scss/shop/shopBanner";
+@import "../scss/shop/sResponsive";
+// menu page
+@import "../scss/menu/menu";
+@import "../scss/menu/menu_responsive";
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.h1 a,
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a {
+  color: inherit;
+}
 
 #progress {
   position: fixed;
@@ -29,7 +53,6 @@ a {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--color-primary);
-
   cursor: pointer;
 }
 #progress-value {

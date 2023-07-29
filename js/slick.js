@@ -585,7 +585,8 @@
             _.$slider.children().children().children()
                 .css({
                     'width':(100 / _.options.slidesPerRow) + '%',
-                    'display': 'flex'
+                    'display': 'flex',
+                    'justify-content' : 'center'
                 });
 
         }

@@ -41,6 +41,7 @@
       imJs.slickSlaider();
       imJs.sideMenu();
       imJs.accirdion();
+      imJs.aos();
     },
     // counter up
     counterUp: function (e) {
@@ -290,6 +291,12 @@
           }
         });
       });
+    },
+
+    aos: function () {
+
+  AOS.init();
+
     },
   };
 

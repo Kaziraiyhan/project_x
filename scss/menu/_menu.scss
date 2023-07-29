@@ -1,0 +1,45 @@
+#menu_banner {
+  .menu_banner {
+    padding: 200px 0 150px 0;
+    background: url(../images/shop/shop.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // overflow: hidden;
+
+    .shape_area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      opacity: 1;
+      transition-delay: 0.7s;
+
+      .shape {
+        height: 10px;
+        width: 10px;
+        line-height: 10px;
+        transform: rotate(45deg);
+        margin: 0 6px;
+        background: var(--color-primary);
+        display: block;
+      }
+    }
+
+    .heading-title {
+      color: #ffffff;
+      font-size: clamp(35px, 6vw, 80px);
+      font-weight: 400;
+      line-height: 80px;
+      text-align: center;
+    }
+    .main-title {
+      color: #ffffff;
+      font-size: clamp(60px, 10vw, 200px);
+      font-weight: 400;
+      margin: 100px 0px -215px 0px;
+      text-align: center;
+    }
+  }
+}

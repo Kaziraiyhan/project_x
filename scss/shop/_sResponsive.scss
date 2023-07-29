@@ -1,0 +1,64 @@
+// Mobile
+
+@media (max-width: 510px) {
+}
+// tablte
+@media (max-width: 768px) {
+  // banner Start
+  #Shop_banner {
+    padding: 60px 0;
+  }
+  #Shop_banner .shop_bnner {
+    .shape_area {
+      margin-top: 0px;
+    }
+    .main-title {
+      margin: 100px 0px -165px 0px;
+    }
+  }
+
+  // about
+
+  .brand_slaider {
+    padding-top: 90px;
+  }
+
+  //   blog
+  #shop_blog {
+    padding: 80px 0;
+  }
+
+  #shop_blog .title-banner {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+// tablte
+@media (min-width: 768px) and (max-width: 992px) {
+  // banner Start
+  #Shop_banner .shop_bnner {
+    .main-title {
+      color: #ffffff;
+      margin: 100px 0px -175px 0px;
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  // banner Start
+  #Shop_banner .shop_bnner {
+    .main-title {
+      color: #ffffff;
+      margin: 100px 0px -180px 0px;
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  // banner Start
+  #Shop_banner .shop_bnner {
+    .main-title {
+      color: #ffffff;
+      margin: 100px 0px -185px 0px;
+    }
+  }
+}

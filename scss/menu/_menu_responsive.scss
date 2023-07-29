@@ -1,0 +1,104 @@
+// Mobile
+
+@media (max-width: 510px) {
+}
+// tablte
+@media (max-width: 768px) {
+  // banner Start
+  #menu_banner {
+    padding: 60px 0;
+  }
+  #menu_banner .menu_banner {
+    .shape_area {
+      margin-top: 0px;
+    }
+    .main-title {
+      margin: 100px 0px -165px 0px;
+    }
+  }
+
+  // about
+
+  #a_about .content {
+    text-align: center;
+    padding: 0px 20px;
+  }
+  #a_about .content .title-banner {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0px;
+    padding-top: 30px;
+  }
+  .brand_slaider {
+    padding-top: 90px;
+  }
+  #about_cta {
+    .cta-inner {
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      .title {
+        color: #ffffff;
+        margin-bottom: 0;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+        .second-title {
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  //   blog
+  #about_blog {
+    padding: 80px 0;
+  }
+
+  #a_about .content {
+    text-align: center;
+    padding: 0 0px;
+}
+.service_area .head_wrapper .title-banner {
+    font-size: 30px;
+    line-height: 48px;
+    margin: 20px 0px 0px 0px;
+    transition-delay: 0.5s;
+}
+#about_blog .title-banner {
+    font-size: 28px;
+    line-height: 1.2;
+}
+}
+
+@media (max-width: 768px) {
+}
+
+// tablte
+@media (min-width: 768px) and (max-width: 992px) {
+  // banner Start
+  #menu_banner .menu_banner {
+    .main-title {
+      color: #ffffff;
+      margin: 100px 0px -175px 0px;
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  // banner Start
+  #menu_banner .menu_banner {
+    .main-title {
+      color: #ffffff;
+      margin: 100px 0px -180px 0px;
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  // banner Start
+  #menu_banner .menu_banner {
+    .main-title {
+      color: #ffffff;
+      margin: 100px 0px -185px 0px;
+    }
+  }
+}
