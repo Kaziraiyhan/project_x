@@ -1262,14 +1262,14 @@ footer .footer_wrapper .footer_get_touch .social_wrapper ul li svg:hover {
     padding: 5px 0px;
   }
 }
-#a_banner .about_banner {
+#common_banner .common_banner {
   padding: 200px 0 150px 0;
   background: url(../images/about/banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-#a_banner .about_banner .shape_area {
+#common_banner .common_banner .shape_area {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1278,7 +1278,7 @@ footer .footer_wrapper .footer_get_touch .social_wrapper ul li svg:hover {
   opacity: 1;
   transition-delay: 0.7s;
 }
-#a_banner .about_banner .shape_area .shape {
+#common_banner .common_banner .shape_area .shape {
   height: 10px;
   width: 10px;
   line-height: 10px;
@@ -1287,14 +1287,14 @@ footer .footer_wrapper .footer_get_touch .social_wrapper ul li svg:hover {
   background: var(--color-primary);
   display: block;
 }
-#a_banner .about_banner .heading-title {
+#common_banner .common_banner .heading-title {
   color: #ffffff;
   font-size: clamp(35px, 6vw, 80px);
   font-weight: 400;
   line-height: 80px;
   text-align: center;
 }
-#a_banner .about_banner .main-title {
+#common_banner .common_banner .main-title {
   color: #ffffff;
   font-size: clamp(60px, 10vw, 200px);
   font-weight: 400;
@@ -1554,13 +1554,13 @@ footer .footer_wrapper .footer_get_touch .social_wrapper ul li svg:hover {
 }
 
 @media (max-width: 768px) {
-  #a_banner {
+  #common_banner {
     padding: 60px 0;
   }
-  #a_banner .about_banner .shape_area {
+  #common_banner .common_banner .shape_area {
     margin-top: 0px;
   }
-  #a_banner .about_banner .main-title {
+  #common_banner .common_banner .main-title {
     margin: 100px 0px -165px 0px;
   }
   #a_about .content {
@@ -1611,19 +1611,19 @@ footer .footer_wrapper .footer_get_touch .social_wrapper ul li svg:hover {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  #a_banner .about_banner .main-title {
+  #common_banner .common_banner .main-title {
     color: #ffffff;
     margin: 100px 0px -175px 0px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  #a_banner .about_banner .main-title {
+  #common_banner .common_banner .main-title {
     color: #ffffff;
     margin: 100px 0px -180px 0px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
-  #a_banner .about_banner .main-title {
+  #common_banner .common_banner .main-title {
     color: #ffffff;
     margin: 100px 0px -185px 0px;
   }
@@ -2115,6 +2115,89 @@ p {
     margin: 100px 0px -185px 0px;
   }
 }
+#team_main {
+  padding: 120px 0;
+}
+
+.team_area_chef .team_wrapper .team_content {
+  width: 100%;
+  padding: 32px 30px 27px 0px;
+  color: #444;
+  overflow: hidden;
+  background: #fff;
+  transition: 0.3s all ease;
+  border-radius: 0 0 15px 15px;
+}
+.team_area_chef .team_wrapper .team_content p.desc {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: var(--color-primary);
+  float: none;
+  font-weight: 400;
+  line-height: 14px;
+}
+.team_area_chef .team_wrapper .team_social {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.team_area_chef .team_wrapper .team_social:hover .team_social_link {
+  transform: translateY(-45px);
+  z-index: 2;
+  opacity: 1;
+}
+.team_area_chef .team_wrapper .team_social .main svg {
+  display: block;
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+  padding: 15px;
+  font-weight: 500;
+  color: #111111;
+  transition: 0.3s;
+  background: #fff;
+}
+.team_area_chef .team_wrapper .team_social .main svg:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+.team_area_chef .team_wrapper .team_social .team_social_link {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translateY(250px);
+  transition: 1s;
+  opacity: 1;
+  right: 0;
+}
+.team_area_chef .team_wrapper .team_social .team_social_link svg {
+  background: #fff;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111111;
+  transition: 0.3s;
+  width: 16px;
+  height: 16px;
+  padding: 15px;
+}
+.team_area_chef .team_wrapper .team_social .team_social_link svg:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+.team_area_chef .team_wrapper .image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.team_area_chef .team_wrapper .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 h1 a,
 h2 a,
 h3 a,

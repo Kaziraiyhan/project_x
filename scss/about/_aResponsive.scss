@@ -5,10 +5,10 @@
 // tablte
 @media (max-width: 768px) {
   // banner Start
-  #a_banner {
+  #common_banner {
     padding: 60px 0;
   }
-  #a_banner .about_banner {
+  #common_banner .common_banner {
     .shape_area {
       margin-top: 0px;
     }
@@ -77,7 +77,7 @@
 // tablte
 @media (min-width: 768px) and (max-width: 992px) {
   // banner Start
-  #a_banner .about_banner {
+  #common_banner .common_banner {
     .main-title {
       color: #ffffff;
       margin: 100px 0px -175px 0px;
@@ -86,7 +86,7 @@
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   // banner Start
-  #a_banner .about_banner {
+  #common_banner .common_banner {
     .main-title {
       color: #ffffff;
       margin: 100px 0px -180px 0px;
@@ -95,7 +95,7 @@
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   // banner Start
-  #a_banner .about_banner {
+  #common_banner .common_banner {
     .main-title {
       color: #ffffff;
       margin: 100px 0px -185px 0px;
