@@ -1,1 +1,11 @@
-/*# sourceMappingURL=Blog.css.map */
+.blog_area {
+  padding: 120px 0;
+}
+.blog_area .blog_post .thumbnail {
+  width: 100%;
+}
+.blog_area .blog_post .thumbnail img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Blog.css.map */
