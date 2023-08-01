@@ -953,7 +953,7 @@ p {
 footer {
   background-color: var(--color-secondary);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 footer .image1 {
   position: absolute;
@@ -1676,6 +1676,14 @@ footer .footer_wrapper .footer_get_touch .social_wrapper ul li svg:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 80px;
+  padding: 0 15px;
+}
+.shop_inner .shop_filter select {
+  width: auto;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  border-radius: 5px;
 }
 .shop_inner .menu_item .portfolio {
   overflow: hidden;
@@ -1684,12 +1692,21 @@ footer .footer_wrapper .footer_get_touch .social_wrapper ul li svg:hover {
   opacity: 1;
   transform: translate(-50%, 20px);
 }
+.shop_inner .menu_item .portfolio:hover .price {
+  opacity: 0;
+  transform: translateY(-50px);
+}
 .shop_inner .menu_item .portfolio .content {
   text-align: center;
   position: relative;
 }
-.shop_inner .menu_item .portfolio .content p {
+.shop_inner .menu_item .portfolio .content .price {
+  transition: var(--transition);
   margin-bottom: 40px;
+  font-size: 16px !important;
+  font-weight: 600;
+  color: var(--color-primary);
+  transition: all 0.4s;
 }
 .shop_inner .menu_item .portfolio .content .rts-btn {
   margin: 0 auto;

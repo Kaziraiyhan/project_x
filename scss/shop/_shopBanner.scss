@@ -51,11 +51,26 @@
   padding: 120px 0;
 }
 
+
+
 .shop_inner {
+
+
+
   .shop_filter {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 80px;
+    padding: 0 15px;
+
+
+    select {
+      width: auto;
+      border: 1px solid #ced4da;
+      padding: 10px;
+      border-radius: 5px;
+    }
   }
   .menu_item {
     .portfolio {
@@ -64,13 +79,32 @@
         opacity: 1;
         transform: translate(-50% , 20px);
       }
+   
+      &:hover .price {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+
+     
+    
+
       .content {
         text-align: center;
         position: relative;
-        p{
+        .price{
+          transition: var(--transition);
           margin-bottom: 40px;
+            font-size: 16px !important;
+            font-weight: 600;
+            color: var(--color-primary);
+            transition: all 0.4s;
+            
+        
         }
-
+       
+    
+          
+  
         .rts-btn {
           margin: 0 auto;
 
