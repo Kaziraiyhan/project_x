@@ -1,0 +1,31 @@
+// Mobile
+
+@media (max-width: 510px) {
+}
+// tablte
+@media (max-width: 768px) {
+  #contact .content_bottom {
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    .address {
+      width: max-content;
+    }
+ 
+    #contact .content_bottom .time {
+      width: max-content;
+    }
+  }
+
+#contact .content{
+    margin-bottom: 40px;
+}
+
+#contact .contact_btn {
+
+    margin: auto;
+}
+}

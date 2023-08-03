@@ -93,3 +93,27 @@
     }
   }
 }
+
+.chef_btn .btn {
+  background: none;
+  border: 1px solid #eeeeee;
+  color: #111111;
+  margin: 0 auto;
+  padding: 20px 33px;
+  font-family: var(--font-secondary);
+  line-height: 10px;
+  max-width: max-content;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: 0.3s;
+  display: block;
+  min-width: max-content;
+  margin-top: 30px;
+  &:hover {
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: #ffffff;
+  }
+}

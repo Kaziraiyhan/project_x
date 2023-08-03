@@ -393,7 +393,10 @@ nav {
     color: #fff;
     display: flex;
   }
-
+  .mobile-menu-link {
+    padding: 5px 0;
+    margin: 5px 0;
+  }
   a {
     display: block;
     color: #fff;
@@ -407,6 +410,21 @@ nav {
 
     .submenu {
       display: none;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          padding-left: 10px;
+        }
+        border: 1px solid transparent;
+
+        &:hover {
+          border: 1px solid #1c1f22;
+        }
+        &:hover a {
+          color: var(--color-primary);
+        }
+      }
     }
   }
   .active .submenu {
@@ -443,4 +461,3 @@ nav {
 }
 
 // resposive disigne md
-

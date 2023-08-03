@@ -32,6 +32,22 @@ a {
 // blog page
 @import "./Blog/blog.scss";
 @import "./Blog/blog_responsive.scss";
+// contact page
+@import "./contact/contact";
+@import "./contact/contactResponsive";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
 h1 a,
 h2 a,
 h3 a,
@@ -47,7 +63,10 @@ h6 a,
   color: inherit;
 }
 
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
   background: transparent;
   border: 1px solid var(--color-border);
   transition: all 0.4s ease-out 0s;
